@@ -18,7 +18,7 @@ connectDB();
 app.use(express.json());
 app.use(
   cors({
-    origin: ['http://localhost:5173', 'https://ichwanardi.vercel.app', 'https://your-server-name.vercel.app'], // frontend
+    origin: ['http://localhost:5173', 'https://ichwanardi.vercel.app', 'https://server-personal-project.vercel.app'], // frontend
     credentials: true,
   })
 );
