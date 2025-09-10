@@ -7,3 +7,6 @@ app.listen(PORT, () => {
   console.log(`📍 Environment: ${process.env.NODE_ENV || 'development'}`);
   console.log(`🌐 Local: http://localhost:${PORT}`);
 });
+
+// Export untuk Vercel
+module.exports = app;

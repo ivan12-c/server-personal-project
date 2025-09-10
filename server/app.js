@@ -18,7 +18,7 @@ connectDB();
 app.use(express.json());
 app.use(
   cors({
-    origin: ['http://localhost:5173', 'https://ichwanardi.vercel.app'], // frontend
+    origin: ['http://localhost:5173', 'https://ichwanardi.vercel.app', 'https://your-server-name.vercel.app'], // frontend
     credentials: true,
   })
 );
@@ -58,3 +58,6 @@ app.use('/api', ProjectRoute);
 app.use('/api/project', ProjectDetailRoute);
 
 module.exports = app;
+
+// Export untuk Vercel serverless
+module.exports.default = app;
