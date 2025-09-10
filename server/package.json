@@ -1,4 +1,12 @@
 {
+  "name": "personal-website",
+  "version": "2.0.0",
+  "description": "Aplikasi Personal Website Pribadi",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
   "dependencies": {
     "axios": "^1.11.0",
     "connect-flash": "^0.1.1",
